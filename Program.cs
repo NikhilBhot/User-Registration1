@@ -8,6 +8,8 @@
             string FName = Console.ReadLine();
             Console.Write("Enter The Last Name : ");
             string LName = Console.ReadLine();
+            Console.Write("Enter the Email : ");
+            string Email = Console.ReadLine();
 
 
             UserRegistartion registration = new UserRegistartion();
@@ -17,6 +19,12 @@
             UserRegistartion registration1 = new UserRegistartion();
             registration.ValidLastName(LName);
             registration.ValidateLName(LName);
+
+
+
+            UserRegistartion registration2 = new UserRegistartion();
+            registration.ValidEmail(Email);
+            registration.ValidateEmail(Email);
         }
     }
 }
