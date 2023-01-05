@@ -6,9 +6,17 @@
         {
             Console.Write("Enter The First Name : ");
             string FName = Console.ReadLine();
+            Console.Write("Enter The Last Name : ");
+            string LName = Console.ReadLine();
+
+
             UserRegistartion registration = new UserRegistartion();
             registration.ValidFirstName(FName);
             registration.ValidateFName(FName);
+
+            UserRegistartion registration1 = new UserRegistartion();
+            registration.ValidLastName(LName);
+            registration.ValidateLName(LName);
         }
     }
 }
