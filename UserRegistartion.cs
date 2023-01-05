@@ -10,7 +10,7 @@ namespace UserRegistration1
     public class UserRegistartion
     {
         public const string FIRST_NAME_REGEX = "^[A-Z][A-za-z]{2,}$";
-        public string ValidFirstName(string input) => Regex.IsMatch(input, FIRST_NAME_REGEX) ? "Valid Name" : "Invalid Name";
+        public string ValidFirstName(string input) => Regex.IsMatch(input, FIRST_NAME_REGEX) ? "true" : "flase";
         public void ValidateFName(string input)
         {
 
